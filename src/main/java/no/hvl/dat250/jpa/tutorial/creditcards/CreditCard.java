@@ -9,6 +9,12 @@ public class CreditCard {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToOne
+    private Bank bank;
+
+    @ManyToOne
+    private Pincode pincode;
+
     public Integer getNumber() {
         // TODO: implement method!
         return null;

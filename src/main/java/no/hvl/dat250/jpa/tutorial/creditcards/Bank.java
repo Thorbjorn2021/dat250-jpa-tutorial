@@ -9,6 +9,10 @@ public class Bank {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @OneToMany
+    private Collection<CreditCard> creditCards;
+
+
     public Long getId() {
         return id;
     }
