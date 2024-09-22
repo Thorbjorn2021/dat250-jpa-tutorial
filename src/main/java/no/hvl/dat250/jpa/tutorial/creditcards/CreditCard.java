@@ -13,6 +13,7 @@ public class CreditCard {
     private Integer balance;
 
     @ManyToOne
+    @JoinColumn(name= "bank_id")
     private Bank bank;
 
     @ManyToOne
@@ -28,8 +29,7 @@ public class CreditCard {
     }
 
     public Integer getCreditLimit() {
-        // TODO: implement method!
-        return null;
+        return creditLimit;
     }
 
     public Pincode getPincode() {
@@ -37,7 +37,6 @@ public class CreditCard {
     }
 
     public Bank getOwningBank() {
-        // TODO: implement method!
-        return null;
+        return bank;
     }
 }
