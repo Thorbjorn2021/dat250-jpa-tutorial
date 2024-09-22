@@ -19,6 +19,9 @@ public class Customer {
     )
     private List<Address> addresses;
 
+    @OneToMany(mappedBy = "customer_id")
+    private List<CreditCard> creditCards;
+
     public Customer() {}
 
     public String getName() {
@@ -30,7 +33,6 @@ public class Customer {
     }
 
     public Collection<CreditCard> getCreditCards() {
-        // TODO: implement method!
-        return null;
+        return creditCards;
     }
 }
