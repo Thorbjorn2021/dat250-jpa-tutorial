@@ -10,6 +10,8 @@ public class Pincode {
     private String pincode;
     private Integer count;
 
+    public Pincode() {}
+
     public Long getId() {
         return id;
     }
