@@ -5,6 +5,7 @@ Explain the used database and how/when it runs.
 * We're using H2 - relational database system. The database is initialized with the setting in persistence.xml, hibernate uses these settings to connect to the database. The database is running when we start the application.
 
 Can you provide the SQL used to create the table Customer?
+
 ![image](https://github.com/user-attachments/assets/382c2759-ef84-447d-b7d6-54c00b524103)
 
 Find a way to inspect the database tables being created and create a database schema in your report. Do the created tables correspond to your initial thoughts regarding the exercise?
