@@ -8,21 +8,23 @@ public class CreditCard {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private Integer number;
+    private Integer creditLimit;
+    private Integer balance;
 
     @ManyToOne
     private Bank bank;
 
     @ManyToOne
+    @JoinColumn(name = "pincode_id")
     private Pincode pincode;
 
     public Integer getNumber() {
-        // TODO: implement method!
-        return null;
+        return number;
     }
 
     public Integer getBalance() {
-        // TODO: implement method!
-        return null;
+        return balance;
     }
 
     public Integer getCreditLimit() {
@@ -31,8 +33,7 @@ public class CreditCard {
     }
 
     public Pincode getPincode() {
-        // TODO: implement method!
-        return null;
+        return pincode;
     }
 
     public Bank getOwningBank() {
